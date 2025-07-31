@@ -9,7 +9,7 @@ It shows current weather, 5-day forecast, and supports automatic location detect
 
 👉 [Click here to view the live app](https://weather-app-by-adarsh.up.railway.app)
 
-![App Preview](assets/preview.png) <!-- Replace with actual image path -->
+![App Preview](preview.png) <!-- Replace with actual image path -->
 
 ---
 
