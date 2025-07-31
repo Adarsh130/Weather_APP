@@ -5,6 +5,14 @@ It shows current weather, 5-day forecast, and supports automatic location detect
 
 ---
 
+## 🔗 Live Demo
+
+👉 [Click here to view the live app](weather-app-by-adarsh.up.railway.app)
+
+![App Preview](assets/preview.png)
+
+---
+
 ## 🚀 Features
 
 ✅ Get **current weather** details  
@@ -69,8 +77,17 @@ Visit `http://127.0.0.1:5000` in your browser.
 Make sure these files exist:
 
 - `requirements.txt`
-- `Procfile` (with: `web: python app.py`)
-- Use `os.environ.get("PORT")` in `app.py`
+- `Procfile` → with content:
+  ```txt
+  web: python app.py
+  ```
+- Use this in `app.py` instead of `app.run(debug=True)`:
+
+```python
+import os
+port = int(os.environ.get("PORT", 5000))
+app.run(host='0.0.0.0', port=port)
+```
 
 ---
 
@@ -110,3 +127,7 @@ This project is open-source and free to use under the [MIT License](LICENSE).
 ## 💬 Feedback
 
 Got a suggestion or bug report? Feel free to open an issue or contact me.
+
+---
+
+### ❤️ Created with love by Adarsh
