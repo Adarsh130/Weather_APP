@@ -7,9 +7,9 @@ It shows current weather, 5-day forecast, and supports automatic location detect
 
 ## 🔗 Live Demo
 
-👉 [Click here to view the live app](weather-app-by-adarsh.up.railway.app)
+👉 [Click here to view the live app](https://weather-app-by-adarsh.up.railway.app)
 
-![App Preview](assets/preview.png)
+![App Preview](assets/preview.png) <!-- Replace with actual image path -->
 
 ---
 
@@ -81,7 +81,13 @@ Make sure these files exist:
   ```txt
   web: python app.py
   ```
-- Use this in `app.py` instead of `app.run(debug=True)`:
+- In `app.py`, replace:
+
+```python
+app.run(debug=True)
+```
+
+With:
 
 ```python
 import os
