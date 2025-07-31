@@ -71,7 +71,6 @@ def index():
     return render_template('index.html', weather=weather, history=history)
 
 if __name__ == '__main__':
-    app.run(debug=True)
 
 import os
 port = int(os.environ.get("PORT", 5000))
